@@ -3,7 +3,7 @@ function getWeather() {
     const iCity = document.querySelector("#iCity").value;
 
 
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=1148694ef40c4addba8201236223006&q=${iCity}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=1148694ef40c4addba8201236223006&q=${iCity}`)
         .then(function (response) {
             // let data = "" ;
             const data = response.data;
