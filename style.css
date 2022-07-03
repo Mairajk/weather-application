@@ -21,10 +21,12 @@
         align-items: baseline;
         justify-content: center;
     }
-    #countryName{
+
+    #countryName {
         margin-left: 10px;
     }
-/* 
+
+    /* 
     .name {
         margin-left: 20px;
     } */
@@ -51,10 +53,9 @@
         margin-top: 50px;
     }
 
-    #weatherType>h2{
+    #weatherType>h2 {
         margin-bottom: 0px;
     }
 
 
 }
-

@@ -8,10 +8,10 @@ function getWeather() {
             // let data = "" ;
             const data = response.data;
             console.log(data);
-            
-            let icon = data.current.condition.icon ;
-            icon.replace("/file// ") ;
-            document.querySelector(`#icon`).src = icon ; 
+
+            let icon = data.current.condition.icon;
+            icon.replace("/file// ");
+            document.querySelector(`#wIcon`).src = icon;
             document.querySelector(`#cityName`).innerHTML = ` <h2> ${data.location.name} , </h2>  `;
             document.querySelector(`#countryName`).innerHTML = ` <h3> ${data.location.country} . </h3> `;
             document.querySelector(`#temp`).innerHTML = ` <h2> ${data.current.temp_c} &degC   </h2>`
