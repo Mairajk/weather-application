@@ -1,4 +1,60 @@
-body{
-    text-align: center;
-    font-size: 200%;
+@media only screen and (min-width: 600px) {
+
+
+    body {
+        text-align: center;
+        font-size: 150%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* #head{
+    font-size: 70px;
+} */
+    #temp>h2 {
+        font-size: 50px;
+        /* -webkit-margin-bottom-collapse: collapse; */
+        margin: 0px 0px 0px 0px;
+    }
+
+    #name {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    #countryName{
+        margin-left: 10px;
+    }
+/* 
+    .name {
+        margin-left: 20px;
+    } */
+
+    #details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .div {
+        margin-left: 35px;
+        margin-right: 35px;
+        /* align-self: ; */
+    }
+
+    #weatherReport {
+        background-color: rgba(200, 200, 200, 0.5);
+        padding: 30px;
+        margin: 0px auto;
+        width: 50% auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #weatherType>h2{
+        margin-bottom: 0px;
+    }
+
+
 }
+

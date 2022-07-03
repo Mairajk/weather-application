@@ -1,0 +1,110 @@
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: skyblue;
+    text-align:left ;
+  }
+
+  #weatherReport{
+    margin-top: 30px;
+  }
+/* 
+  #details{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: flex-start;
+    margin-left: 5px;
+    
+  } */
+
+  #div1{
+      text-align: left;
+  }
+  #temp>h2 {
+    font-size: 70px;
+    margin: 0px 0px 0px 15px;
+}
+
+#weatherType>h2{
+  margin: 0px 0px 0px 120px ;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+#name{
+  display: flex;
+  align-items: baseline;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#countryName>h3{
+  margin-left: 10px;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+#cityName>h2{
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.div{
+  display: flex ;
+  font-size: 30px ;
+  margin: 15px 0px 0px 15px;
+}
+
+.div>.content{
+  margin : 0px 0px 0px 15px ;
+}
+
+.div>.cHead{
+  margin : 0px 0px 0px 15px ;
+}
+
+#head{
+  font-size: 80px;
+  margin: 20px 10px 20px 10px;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+  /* padding: 15px; */
+  text-align: center;
+  background-color: rgba(275, 275, 275, 0.2)  ;
+  box-shadow: 5px 5px 5px orange ;
+  /* opacity: ; */
+  border-radius: 70px 0px 70px 0px;
+  color: white;
+}
+
+form{
+  text-align: center;
+}
+
+input{
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: rgba(275, 275, 275, 0.1) ;
+  box-shadow: 3px 3px 5px gray;
+  border: 1px solid skyblue;
+
+  /* border-top: 2px solid black;
+  border-left: 2px solid black ;
+  box-shadow: -3px -3px 1px gray; */
+}
+
+input::placeholder{
+  color: orange;
+  font-weight: lighter;
+}
+
+input:focus-visible{
+  background-color: rgba(275, 275, 275, 0.1) ;
+  box-shadow: 2px 2px 3px gray;
+  border: 1px solid skyblue;
+}
+
+}

@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Weather </title>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="app.js"></script>
+<link rel="stylesheet" href="media.css">
 <link rel="stylesheet" href="style.css">
+
 <body>
-    
-    <h1> Weather Application </h1>
+
+    <h1 id="head"> Weather </h1>
 
     <form action="" onsubmit="getWeather() ; return false ;">
-    <input type="text" placeholder=" Enter Your City Name : " autofocus required id="iCity">
-    <button type="submit" > Weather </button>
+        <input type="text" placeholder=" Enter Your City Name : " autofocus required id="iCity">
     </form>
 
     <div id="weatherReport">
-        <div id="icon"></div>
-        <div id="cityName"></div>
-        <div id="countryName"></div>
-        <div id="temp"></div>
+
+        <div id="iconDiv">
+            <div id="icon"></div>
+            <div id="temp"></div>
+        </div>
+
         <div id="weatherType"></div>
+
+        <div id="name">
+            <div id="cityName" class="name"></div>
+            <div id="countryName" class="name"></div>
+        </div>
+
+        <div id="details">
+            <div id="div1">
+                <div id="precipitations" class="div"></div>
+                <div id="humidity" class="div"></div>
+            </div>
+
+            <div id="div2">
+                <div id="wind" class="div"></div>
+                <div id="visibility" class="div"></div>
+            </div>
+        </div>
+
         <div id="maxTemp"></div>
         <div id="minTemp"></div>
-        <div id="precipitations"></div>
-        <div id="humidity"></div>
-        <div id="wind"></div>
-        <div id="visibility"></div>
+
     </div>
 
-    
+
 </body>
+
 </html>
