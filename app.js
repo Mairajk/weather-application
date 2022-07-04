@@ -6,6 +6,9 @@ function getWeather() {
     axios.get(`https://api.weatherapi.com/v1/current.json?key=1148694ef40c4addba8201236223006&q=${iCity}`)
         .then(function (response) {
             // let data = "" ;
+       
+            document.querySelector(`#weatherReport`).removeAttribute("class")
+       
             const data = response.data;
             console.log(data);
 

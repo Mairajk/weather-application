@@ -1,19 +1,16 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 
 
     body {
-        text-align: center;
+        /* text-align: center; */
         font-size: 150%;
+        background-color: skyblue;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    /* #head{
-    font-size: 70px;
-} */
-    #temp>h2 {
-        font-size: 50px;
-        /* -webkit-margin-bottom-collapse: collapse; */
-        margin: 0px 0px 0px 0px;
+    #head{
+        text-align: center;
+        /* color: orange; */
     }
 
     #name {
@@ -25,37 +22,104 @@
     #countryName {
         margin-left: 10px;
     }
-
-    /* 
-    .name {
-        margin-left: 20px;
-    } */
-
+/* 
     #details {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         text-align: left;
-    }
+    } */
 
     .div {
-        margin-left: 35px;
-        margin-right: 35px;
-        /* align-self: ; */
+         /* margin-left: 350px;
+        margin-right: 350px;  */
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .cHead{
+        margin: 10px 20px 0px 100px ;
+        color: whitesmoke;
+        box-shadow: 2px 2px 5px orange;
+        border-radius: 15px;
+        padding: 15px;
+        width: 175px;
+        text-align: center;
+        text-shadow: 1px 1px 1px gray;
+    }
+    
+    .content{
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px whitesmoke;
+        padding: 15px;
+        width: 175px;
+        text-align: center;
+        color: orange;
+        text-shadow: 1px 1px 1px gray;
+        margin: 10px 100px 0px 20px ;
     }
 
     #weatherReport {
-        background-color: rgba(200, 200, 200, 0.5);
-        padding: 30px;
+        background-color:rgba(100, 100, 100, 0.05);
+        padding: 50px;
+        width: 40% ;
+        border-radius: 70px;
         margin: 0px auto;
-        width: 50% auto;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
+        box-shadow: 5px 5px 10px gray;
+    }
+
+    .hidden{
+        visibility: hidden;
     }
 
     #weatherType>h2 {
         margin-bottom: 0px;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 5px 5px 5px gray ;
     }
+
+    /* 
+    #temp{
+        text-align: end;
+
+    }
+     */
+    #iconDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    #wIcon {
+        width: 200%;
+    }
+
+    #icon {
+        margin: 0px 60px 0px 0px;
+
+    }
+
+    #temp>h2 {
+        font-size: 80px;
+        margin: 50px 0px 0px 30px;
+        color: orange;
+        text-shadow: 5px 5px 5px grey;
+    }
+
+    #cityName{
+        color: orange;
+        text-shadow: 2px 2px 2px grey;
+
+    }
+
+    #countryName{
+        color: whitesmoke;
+        text-shadow: 3px 3px 3px grey;
+    }
+
 
 
 }
