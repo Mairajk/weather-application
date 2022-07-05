@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
 
 
     body {
@@ -96,11 +96,11 @@
     #weatherReport {
         background-color:rgba(100, 100, 100, 0.05);
         padding: 50px;
-        width: 40% ;
-        border-radius: 70px;
+        /* width: 40% ; */
+        border-radius: 120px;
         margin: 0px auto;
         text-align: center;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         box-shadow: 5px 5px 10px gray;
     }
 
@@ -139,7 +139,7 @@
 
     #temp>h2 {
         font-size: 80px;
-        margin: 50px 0px 0px 30px;
+        margin: 50px 0px 0px 0px;
         color: orange;
         text-shadow: 5px 5px 5px grey;
     }
