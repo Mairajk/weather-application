@@ -3,6 +3,12 @@
     background-color: skyblue;
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: skyblue;
+    background-size:cover ;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ 
   }
 
   #weatherReport {
@@ -80,7 +86,7 @@
   }
 
   #head {
-    font-size: 80px;
+    font-size: 60px;
     margin: 20px 10px 20px 10px;
     font-style: italic;
     /* font-family:'Times New Roman', Times, serif; */

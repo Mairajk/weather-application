@@ -6,6 +6,12 @@
         font-size: 150%;
         background-color: skyblue;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: skyblue;
+        background-size:cover ;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+     
     }
 
     #head{

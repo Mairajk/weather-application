@@ -1,4 +1,3 @@
-
 function getWeather() {
     const iCity = document.querySelector("#iCity").value;
 
@@ -6,9 +5,9 @@ function getWeather() {
     axios.get(`https://api.weatherapi.com/v1/current.json?key=1148694ef40c4addba8201236223006&q=${iCity}`)
         .then(function (response) {
             // let data = "" ;
-       
+
             document.querySelector(`#weatherReport`).removeAttribute("class")
-       
+
             const data = response.data;
             console.log(data);
 
@@ -26,6 +25,37 @@ function getWeather() {
             document.querySelector(`#visibility`).innerHTML = ` <p class="cHead"> Visibility: </p> <p class="content"> ${data.current.vis_km}km/h </p>`
             // document.querySelector(`#maxTemp`).innerHTML = 
             // document.querySelector(`#minTemp`).innerHTML = 
+
+
+
+            let weather = data.current.condition.text;
+            weather = weather.toUpperCase();
+            console.log(weather);
+
+            if (weather === `PARTLY CLOUDY`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./PCloudy4.gif') ";
+            } else if (weather === `SUNNY`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./sunny2.gif') ";
+
+            } else if (weather === `MODERATE OR HEAVY RAIN WITH THUNDER` || weather === `MODERATE OR HEAVY RAIN SHOWER`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./TStorm.gif') ";
+
+            } else if (weather === `MODERATE RAIN AT TIMES` || weather === `RAINY`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./rainy.gif') ";
+
+                // } else if (weather === `RAINY`) {
+                //     document.querySelector(`#body`).style.backgroundImage = " url('./rainy.gif') ";
+
+            } else if (weather === `MIST`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./mist2.gif') ";
+
+            } else if (weather === `CLEAR`) {
+                document.querySelector(`#body`).style.backgroundImage = " url('./Clear.webp') ";
+
+            }
+
+
+
 
         })
 }
